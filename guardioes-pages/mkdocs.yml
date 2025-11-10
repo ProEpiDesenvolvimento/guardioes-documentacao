@@ -1,0 +1,65 @@
+site_name: Guardiões da Saúde
+site_description: Documentação técnica e funcional do projeto Guardiões da Saúde
+site_url: https://seuusuario.github.io/guardioes-pages/
+
+theme:
+  name: material
+  language: pt
+  logo: assets/img/logo.png
+  favicon: assets/img/logo.png
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - content.code.copy
+    - content.tabs.link
+    - toc.integrate
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: teal
+      accent: blue
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Modo Escuro
+      primary: blue
+      accent: teal
+
+extra_css:
+  - assets/styles/custom.css
+
+
+nav:
+  - Início: index.md
+  - Sobre: sobre.md
+  - Equipe: equipe.md
+  - Contribuindo: contribuindo.md
+  - Qualidade:
+      - Visão Geral: Qualidade/qualidade.md
+      - Métricas: Qualidade/metricas.md
+      - Testes e Validação: Qualidade/testes.md
+      - Manutenibilidade: Qualidade/manutencao.md
+      - Usabilidade: Qualidade/usabilidade.md
+      - Desempenho e Segurança: Qualidade/desempenho-seguranca.md
+  - Requisitos:
+      - Requisitos Elicitados: Requisitos/requisitos.md
+      - Rastreabilidade: Requisitos/rastreabilidade.md
+
+
+
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
