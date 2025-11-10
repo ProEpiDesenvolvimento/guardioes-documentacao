@@ -1,0 +1,31 @@
+.md-header {
+  background: linear-gradient(90deg, #4cb7a5 0%, #2a89d8 100%);
+}
+
+.md-tabs {
+  background-color: #028f86 !important;
+  box-shadow: none;
+}
+
+h1, h2, h3 {
+  color: #004d61;
+  font-weight: 600;
+}
+
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.grid.cards > * {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.grid.cards strong {
+  color: #007f8c;
+}
