@@ -24,5 +24,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force
+        working-directory: guardioes-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
